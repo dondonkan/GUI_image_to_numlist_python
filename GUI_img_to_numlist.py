@@ -1,7 +1,6 @@
 import tkinter as tk
 from tkinter import filedialog
 import os
-import zipfile
 import numpy as np
 import cv2 
 import datetime
@@ -144,19 +143,6 @@ class Application(tk.Frame):
                 f.write(self.ext)
 
             self.massage.set("分割が完了しました")
-
-
-            # zp = zipfile.ZipFile("./output_files"+ self.now.strftime('%Y%m%d_%H%M%S') +".zip","w")
-            # zp.write('output/b.txt')
-            # zp.write('output/g.txt')
-            # zp.write('output/r.txt')
-            # zp.close()
-
-
-            # load_b = np.loadtxt('b.txt')
-            # load_g = np.loadtxt('g.txt')
-            # load_r = np.loadtxt('r.txt')
-
 
         else:
             print("no")
